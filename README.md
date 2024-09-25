@@ -15,9 +15,9 @@ En este proyecto, abordamos el desafío de reducir el extremismo en una red soci
 El extremismo de la red se determina por qué tan lejos están las opiniones de los usuarios de un punto de moderación (0). Nuestra tarea es reducir este extremismo usando un presupuesto limitado para moderar opiniones, representado como el esfuerzo máximo permitido. Aplicamos las estrategias para determinar qué usuarios deben ser moderados y cuánto esfuerzo gastar en cada uno para lograr la mayor reducción de extremismo.
 
 ## 💡 Características del Proyecto
-Implementaciones Algorítmicas: Se implementan tres enfoques diferentes—fuerza bruta, voraz y programación dinámica—para resolver el problema.
-Análisis de Complejidad: Un análisis detallado de la complejidad temporal y espacial de cada algoritmo.
-Entrada/Salida: El sistema lee datos de la red desde un archivo de texto y produce la estrategia de moderación óptima, el esfuerzo asociado y la puntuación final de extremismo.
+- Implementaciones Algorítmicas: Se implementan tres enfoques diferentes fuerza bruta, voraz y programación dinámica para resolver el problema.
+- Análisis de Complejidad: Un análisis detallado de la complejidad temporal y espacial de cada algoritmo.
+- Entrada/Salida: El sistema lee datos de la red desde un archivo de texto y produce la estrategia de moderación óptima, el esfuerzo asociado y la puntuación final de extremismo.
 
 ## 🚀 Tecnologías Utilizadas
 - Python: Los algoritmos y simulaciones están implementados en Python.
