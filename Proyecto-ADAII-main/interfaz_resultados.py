@@ -112,6 +112,24 @@ class AlgoritmosApp:
         ax.set_ylabel("Seleccionado (1) o No (0)")
         self.plot_area.draw()
 
+        # Guardar los resultados en un archivo .txt
+        output_file = filedialog.asksaveasfilename(defaultextension=".txt", filetypes=[("Text files", "*.txt")])
+    
+        if output_file:
+            try:
+                with open(output_file, 'w') as f:
+                    # Escribir el extremismo final en la primera línea (Ext)
+                    f.write(f"{final_extremism}\n")
+                    # Escribir el esfuerzo total en la segunda línea (Esf)
+                    f.write(f"{total_effort}\n")
+                    # Escribir la estrategia seleccionada (mod0, mod1, ..., mod(n-1))
+                    for i, mod in enumerate(strategy):
+                        f.write(f"mod{i}: {mod}\n")
+                messagebox.showinfo("Éxito", "Resultados guardados correctamente.")
+            except Exception as e:
+                messagebox.showerror("Error", f"No se pudieron guardar los resultados: {str(e)}")
+
+
 if __name__ == "__main__":
     root = tk.Tk()
     app = AlgoritmosApp(root)
